@@ -1,0 +1,106 @@
+.header {
+  background-color: #f9f9f9;
+}
+
+.header-item {
+  align-self: center;
+}
+
+.header-menuIcon {
+  text-align: right;
+}
+
+.header-menuIcon span {
+  font-size: 30px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-questionIcon {
+  text-align: left;
+}
+
+.header-questionIcon span {
+  font-size: 30px;
+}
+
+.header-search {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.header-search span {
+  align-self: center;
+  font-size: 22px;
+  margin: 0 5px 0 10px;
+}
+
+.header-search input {
+  border: none;
+  border-right: 1px solid #ccc;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+.header-profileIcon-outer {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+.header-profileIcon {
+  font-size: 24px;
+  text-align: center;
+}
+
+.header-BasketIcon {
+  font-size: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: #fff;
+    padding: 10px 15px;
+  }
+  .header-search {
+    background-color: #f0f0f1;
+    border: none;
+  }
+  .header-search {
+    height: 45px;
+    margin: 0;
+  }
+  .header-search span {
+    margin: 0 10px;
+  }
+  .header-search input {
+    background-color: #f0f0f1;
+    border-right: none;
+    padding: 5px;
+  }
+  .header-profileIcon {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  .header-profileIcon span {
+    align-self: center;
+    font-size: 21px;
+  }
+  .header-profileIcon p {
+    font-size: 12px;
+    margin: 0 10px;
+    align-self: center;
+  }
+  .header-BasketIcon {
+    border-right: 1px solid #eee;
+  }
+}

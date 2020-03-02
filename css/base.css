@@ -1,0 +1,95 @@
+a {
+  color: #333;
+  display: block;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input {
+  outline: none;
+  font-size: 14px;
+}
+
+input::placeholder {
+  direction: rtl;
+}
+
+p {
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+body {
+  font-family: IRANSans_FaNum_Light;
+  background-color: #fff;
+  color: #333;
+  direction: rtl;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.icon {
+  font-family: icomoon;
+  display: block;
+  color: #888;
+}
+
+.icon-search::before {
+  content: "\e9e1";
+}
+
+.icon-search1::before {
+  content: "\eaf5";
+}
+
+.icon-menu::before {
+  content: "\e9af";
+}
+
+.icon-menu1::before {
+  content: "\eac1";
+}
+
+.icon-question::before {
+  content: "\e9d5";
+}
+
+.icon-user::before {
+  content: "\ea0f";
+}
+
+.icon-user-solid-circle::before {
+  content: "\ea12";
+}
+
+.icon-shopping-cart::before {
+  content: "\e9e8";
+}
+
+.icon-instagram::before {
+  content: "\eaad";
+}
+
+.darkBody {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: IRANSans_FaNum_Light;
+  src: url(../assets/font/IRANSans_FaNum_Light.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: icomoon;
+  src: url(../assets/font/icomoon.ttf);
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - First Page</title>
+
+  <!-- css libs -->
+  <link rel="stylesheet" href="../assets/lib/css/bootstrap.min.css">
+
+  <!-- dev -->
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/first-page.css">
+
+  <!-- build -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- dark body -->
+  <div id="darkBody" class="darkBody"></div>
+
+  <!-- header -->
+  <header class="container-fluid header">
+    <div class="row">
+      <div class="col-3 d-md-none header-item">
+        <div class="header-menuIcon" id="header-item-menuIcon">
+          <span class="icon icon-menu"></span>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 header-item">
+        <a href="#" class="header-logo">
+          <img src="../assets/img/DigikalaLogo.jpg" alt="Logo">
+        </a>
+      </div>
+      <div class="col-3 d-md-none header-item">
+        <div class="header-questionIcon">
+          <span class="icon icon-question"></span>
+        </div>
+      </div>
+      <div class="col-8 col-md-6 col-lg-5 ml-lg-auto header-item">
+        <section class="d-flex header-search">
+          <span class="icon icon-search"></span>
+          <input type="text" placeholder="جستجو...">
+        </section>
+      </div>
+      <div class="col-2 col-md-3 col-lg-2 header-item header-profileIcon-outer">
+        <div class="d-flex justify-content-center header-profileIcon">
+          <span class="icon icon-user"></span>
+          <p class="d-none d-md-block">ورود به حساب کاربری</p>
+        </div>
+      </div>
+      <div class="col-2 col-md-1 header-item">
+        <div class="header-BasketIcon">
+          <span class="icon icon-shopping-cart"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- navbar -->
+  <article class="">
+    <nav class="">
+      <article class="navbar">
+        <section class="navbar-logo">
+          <img src="../assets/img/DigikalaLogo.jpg" alt="DigikalaLogo">
+        </section>
+        <!-- <ul id="menu" class="d-lg-flex flex-lg-row flex-lg-wrap justify-content-lg-center">
+          <li class="item">
+            <a href="#" class="d-flex flex-wrap flex-row item-title">
+              <span class="d-none d-lg-block icon icon-home navbar-icon-main"></span>
+              <p>صفحه اصلی</p>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="d-flex flex-wrap flex-row item-title">
+              <span class="d-none d-lg-block icon icon-check navbar-icon-main"></span>
+              <p>توانمندی ها</p>
+              <span
+                class="d-block d-lg-none icon icon-arrow-back navbar-icon-mobile navbar-icon-arrow navbar-icon-arrow"></span>
+            </a>
+            <div class="details">
+              <ul class="submenu submenu-multipleItem">
+                <li class="title">
+                  <a href="#" class="d-flex flex-wrap flex-row title-inner">
+                    <p>آتلیه طراحی</p>
+                    <span class="d-block d-lg-none icon icon-arrow-back navbar-icon-arrow"></span>
+                  </a>
+                </li>
+                <li class="subitem"><a href="#">طراحی داخلی</a></li>
+                <li class="subitem"><a href="#">طراحی اداری و تجاری</a></li>
+                <li class="subitem"><a href="#">طراحی ویلایی</a></li>
+                <li class="subitem"><a href="#">طراحی سبز</a></li>
+                <li class="subitem"><a href="#">طراحی های شگفت انگیز</a></li>
+              </ul>
+              <ul class="submenu submenu-multipleItem">
+                <li class="title">
+                  <a href="#" class="d-flex flex-wrap flex-row title-inner">
+                    <p>پروژه های اجرایی</p>
+                    <span class="d-block d-lg-none icon icon-arrow-back navbar-icon-arrow"></span>
+                  </a>
+                </li>
+                <li class="subitem"><a href="#">دکوراسیون داخلی</a></li>
+                <li class="subitem"><a href="#">دکوراسیون اداری و تجاری</a></li>
+                <li class="subitem"><a href="#">ساخت ویلا</a></li>
+                <li class="subitem"><a href="#">معماری سبز</a></li>
+                <li class="subitem"><a href="#">بازسازی و مرمت</a></li>
+                <li class="subitem"><a href="#">اجراهای خاص و متفاوت</a></li>
+              </ul>
+              <ul class="submenu submenu-multipleItem">
+                <li class="title">
+                  <a href="#" class="d-flex flex-wrap flex-row title-inner">
+                    <p>اجرای آکواریوم</p>
+                    <span class="d-block d-lg-none icon icon-arrow-back navbar-icon-arrow"></span>
+                  </a>
+                </li>
+                <li class="subitem"><a href="#">آکواریوم آب شیرین</a></li>
+                <li class="subitem"><a href="#">آکواریوم آب شور</a></li>
+                <li class="subitem"><a href="#">آکواریوم گیاهی</a></li>
+                <li class="subitem"><a href="#">تراریوم</a></li>
+                <li class="subitem"><a href="#">پالوداریوم</a></li>
+                <li class="subitem"><a href="#">آبنما</a></li>
+                <li class="subitem"><a href="#">برکه</a></li>
+                <li class="subitem"><a href="#">سبز آبی های عجیب</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="d-flex flex-wrap flex-row item-title">
+              <span class="d-none d-lg-block icon icon-fa navbar-icon-main"></span>
+              <p>برندهای معماری</p>
+              <span class="d-block d-lg-none icon icon-arrow-back navbar-icon-mobile navbar-icon-arrow"></span>
+            </a>
+            <div class="details">
+              <ul class="submenu">
+                <li class="title"><a href="#">آرشیتکت های برند</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">سازندگان برند</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">ساختمان های برند</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">متریال های برند</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">مشاورین املاک برند</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="d-flex flex-wrap flex-row item-title">
+              <span class="d-none d-lg-block icon icon-check navbar-icon-main"></span>
+              <p>انجمن معماران</p>
+              <span class="d-block d-lg-none icon icon-arrow-back navbar-icon-mobile navbar-icon-arrow"></span>
+            </a>
+            <div class="details">
+              <ul class="submenu">
+                <li class="title"><a href="#">خلاق شو</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">عکس مکس</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">دانلودستان</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">قوانین فنگ شویی</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">معماران برتر</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">استخدام و کاریابی</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">فرصت سرمایه گذاری</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="d-flex flex-wrap flex-row item-title">
+              <span class="d-none d-lg-block icon icon-board navbar-icon-main"></span>
+              <p>مجله</p>
+              <span class="d-block d-lg-none icon icon-arrow-back navbar-icon-mobile navbar-icon-arrow"></span>
+            </a>
+            <div class="details">
+              <ul class="submenu">
+                <li class="title"><a href="#">مجله معماری</a></li>
+              </ul>
+              <ul class="submenu">
+                <li class="title"><a href="#">مجله آکواریوم</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#" class="d-flex flex-wrap flex-row item-title">
+              <span class="d-none d-lg-block icon icon-shopping navbar-icon-main"></span>
+              <p>فروشگاه</p>
+              <span class="d-block d-lg-none icon icon-arrow-back navbar-icon-mobile navbar-icon-arrow"></span>
+            </a>
+            <div class="details">
+              <ul class="submenu">
+                <li class="title">
+                  <a href="#" class="d-flex flex-wrap flex-row">حساب من</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul> -->
+      </article>
+    </nav>
+  </article>
+
+  <!-- footer -->
+  <footer class="container-fluid footer">
+    <hr>
+    <div class="row footer-getApp">
+      <div class="col-12">
+        <p class="footer-getApp-title">تخفیف‌های جذاب را از اپلیکیشن دنبال کنید!</p>
+      </div>
+      <div class="col-12">
+        <section class="d-flex flex-row flex-wrap justify-content-center footer-getApp-links">
+          <a href="#"><img src="../assets/img/GetFromGooglePlay.png" alt="GetFromGooglePlay"></a>
+          <a href="#"><img src="../assets/img/GetFromSibApp.png" alt="GetFromSibApp"></a>
+          <a href="#"><img src="../assets/img/GetFromBazaar.png" alt="GetFromBazaar"></a>
+        </section>
+      </div>
+    </div>
+    <hr>
+    <div class="row footer-insertEmail">
+      <div class="col-12">
+        <p class="footer-insertEmail-title">از تخفیف‌ها و جدیدترین‌های دیجی‌کالا باخبر شوید!</p>
+      </div>
+      <div class="col-12">
+        <form class="row footer-insertEmail-form justify-content-md-between" action="">
+          <input class="col-12 col-md-8 footer-insertEmail-formInput" type="text" placeholder="ایمیل خود را وارد کنید">
+          <button class="col-12 col-md-3 footer-insertEmail-formSubmit" type="submit">تایید ایمیل</button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="row footer-links">
+      <div class="col-12">
+        <p>ما را در شبکه‌های اجتماعی دنبال کنید</p>
+        <a href="#" class="d-flex justify-content-center footer-links-instagram">
+          <span class="icon icon-instagram footer-link-instagramIcon"></span>
+          <span>اینستاگرام دیجی‌کالا</span>
+        </a>
+        <div class="row footer-links-wrapper">
+          <a href="#" class="col-6 col-md-3">نحوه ثبت سفارش</a>
+          <a href="#" class="col-6 col-md-3">فروش در دیجی‌کالا</a>
+          <a href="#" class="col-6 col-md-3">راهنما</a>
+          <a href="#" class="col-6 col-md-3">سوالات متداول</a>
+          <a href="#" class="col-6 col-md-3">درباره دیجی‌کالا</a>
+          <a href="#" class="col-6 col-md-3">دانلود اپلیکیشن</a>
+          <a href="#" class="col-6 col-md-3">شرایط استفاده</a>
+          <a href="#" class="col-6 col-md-3">فرصت‌های شغلی</a>
+          <a href="#" class="col-6 col-md-3">حریم خصوصی</a>
+          <a href="#" class="col-6 col-md-3">گزارش باگ</a>
+          <a href="#" class="col-6 col-md-3">اتاق خبر دیجی‌کالا</a>
+          <a href="#" class="col-6 col-md-3">تماس با ما</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row footer-desc">
+      <h4>فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h4>
+      <p> فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به
+        سه اصل کلیدی، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا،
+        موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.</p>
+      <div class="d-flex flex-wrap justify-content-center footer-desc-imgs">
+        <img src="../assets/img/EtehadieMajaziLogo.png" alt="EtehadieMajaziLogo">
+        <img src="../assets/img/EtemadElectronicLogo.png" alt="EtemadElectronicLogo">
+        <img src="../assets/img/SamandehiLogo.png" alt="SamandehiLogo">
+      </div>
+    </div>
+    <hr>
+    <div class="row footer-copyright">
+      <p>کلیه حقوق این سایت متعلق به <span>شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا)</span> می‌باشد</p>
+    </div>
+  </footer>
+
+  <!-- js libs -->
+  <script src="/assets/lib/js/jquery-3.4.1.min.js"></script>
+  <script src="/assets/lib/js/bootstrap.min.js"></script>
+
+  <!-- dev -->
+  <script src="../js/navbar.js"></script>
+
+  <!-- build -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

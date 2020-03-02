@@ -1,0 +1,135 @@
+.footer {
+  margin-top: 1000px;
+}
+
+.footer-getApp {
+  padding: 20px 10px;
+  background-color: #f9f9f9;
+}
+
+.footer-getApp-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.footer-getApp-links img {
+  width: 100%;
+  max-width: 150px;
+  margin: 5px;
+}
+
+.footer-insertEmail {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-insertEmail-title {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.footer-insertEmail-form {
+  padding: 0 15px;
+}
+
+.footer-insertEmail-formInput {
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+  border: unset;
+  height: 50px;
+  padding: 10px;
+  direction: ltr;
+  border-radius: 5px;
+}
+
+.footer-insertEmail-formSubmit {
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00bfd6;
+  color: #fff;
+  transition: .2s;
+}
+
+.footer-insertEmail-formSubmit:focus, .footer-insertEmail-formSubmit:hover {
+  color: #00bfd6;
+  outline: none;
+  background-color: #f9f9f9;
+  border: 1px solid #00bfd6;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-insertEmail-formInput {
+    margin: 0;
+  }
+}
+
+.footer-links {
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-links-instagram {
+  background-color: linear-gradient(265deg,#4e60d3,#913baf 35%,#d52d88 68%,#f26d4f);
+  background-image: -webkit-linear-gradient(185deg,#4e60d3,#913baf 35%,#d52d88 68%,#f26d4f);
+  width: 200px;
+  margin: 20px auto 40px auto;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.footer-links-instagram span {
+  color: #fff;
+  align-self: center;
+  margin: 5px;
+}
+
+.footer-link-instagramIcon {
+  font-size: 25px;
+}
+
+.footer-links-wrapper a {
+  font-size: 13px;
+  line-height: 37px;
+}
+
+.footer-desc {
+  text-align: right;
+  padding: 15px 30px;
+}
+
+.footer-desc h4 {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.footer-desc p {
+  margin-top: 10px;
+  text-align: justify;
+  color: #999;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.footer-desc-imgs {
+  margin: 0 auto;
+}
+
+.footer-desc-imgs img {
+  margin: 20px 0;
+  width: 150px;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 15px 40px;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.footer-copyright span {
+  color: #00bfd6;
+}
