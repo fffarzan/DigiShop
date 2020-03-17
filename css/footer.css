@@ -1,33 +1,40 @@
 .footer {
-  margin-top: 1000px;
+  padding: 0;
+}
+
+.footer-up {
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.footer-contact-outer {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer-getApp {
-  padding: 20px 10px;
-  background-color: #f9f9f9;
+  padding: 20px 0;
 }
 
 .footer-getApp-title {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .footer-getApp-links img {
   width: 100%;
-  max-width: 150px;
+  max-width: 140px;
   margin: 5px;
 }
 
 .footer-insertEmail {
-  background-color: #f9f9f9;
   text-align: center;
   padding: 20px 10px;
 }
 
 .footer-insertEmail-title {
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .footer-insertEmail-form {
@@ -35,13 +42,14 @@
 }
 
 .footer-insertEmail-formInput {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
   margin-bottom: 15px;
   border: unset;
   height: 50px;
   padding: 10px;
   direction: ltr;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .footer-insertEmail-formSubmit {
@@ -60,15 +68,15 @@
   border: 1px solid #00bfd6;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-insertEmail-formInput {
-    margin: 0;
-  }
-}
-
 .footer-links {
   padding: 15px;
   text-align: center;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-links p {
+  font-size: 14px;
 }
 
 .footer-links-instagram {
@@ -95,18 +103,111 @@
   line-height: 37px;
 }
 
-.footer-desc {
-  text-align: right;
-  padding: 15px 30px;
+.footer-socialMedia {
+  margin-top: 20px;
 }
 
-.footer-desc h4 {
+.footer-socialMedia p {
+  font-size: 14px;
+}
+
+.footer-socialMedia-links {
+  margin-top: 10px;
+}
+
+.footer-socialMedia-links span {
+  font-size: 27px;
+  margin-left: 20px;
+  transition: .3s;
+}
+
+.footer-socialMedia-links span:hover {
+  color: #333;
+}
+
+@media screen and (min-width: 992px) {
+  .footer-up {
+    background-color: #eceff1;
+  }
+  .footer-contact-outer {
+    border-bottom: none;
+  }
+  .footer-contact {
+     padding: 5px;
+  }
+  .footer-contact-inner {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    margin: 0 0px;
+  }
+  .footer-contactInfo {
+    text-align: right;
+    padding: 0;
+  }
+  .footer-contactInfo p {
+    margin-bottom: 15px;
+  }
+  .footer-contactInfo-item {
+    margin-left: 25px;
+  }
+  .footer-contactInfo-item span {
+    margin-left: 10px;
+  }
+  .footer-contactInfo-item a {
+    color: #4a5f73;
+  }
+  .footer-getApp {
+    padding: 0;
+    align-self: center;
+  }
+  .footer-getApp-links-outer {
+    padding: 0;
+    
+  }
+  .footer-links {
+    background-color: #eceff1;
+    border-top: none;
+  }
+  .footer-links-wrapper a {
+    text-align: right;
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .footer-insertEmail {
+    text-align: right;
+  }
+  .footer-insertEmail-title {
+    font-size: 14px;
+  }
+  .footer-insertEmail-formInput {
+    border-radius: 0 5px 5px 0;
+    margin: 0;
+  }
+  .footer-insertEmail-formSubmit {
+    border-radius: 5px 0 0 5px;
+  }
+}
+
+/* footer down */
+
+.footer-desc {
+  text-align: right;
+  padding: 15px 15px;
+}
+
+.footer-desc-context {
+  margin-top: 10px;
+}
+
+.footer-desc-context h4 {
   font-size: 15px;
   font-weight: bold;
   line-height: 28px;
+  color: #5d5959;
+  margin-bottom: 20px;
 }
 
-.footer-desc p {
+.footer-desc-context p {
   margin-top: 10px;
   text-align: justify;
   color: #999;
@@ -115,12 +216,14 @@
 }
 
 .footer-desc-imgs {
-  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.footer-desc-imgs img {
-  margin: 20px 0;
-  width: 150px;
+.footer-desc-imgs a {
+  margin: 10px;
 }
 
 .footer-copyright {
@@ -128,8 +231,45 @@
   padding: 15px 40px;
   font-size: 12px;
   line-height: 25px;
+  justify-content: center;
 }
 
 .footer-copyright span {
   color: #00bfd6;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-copyright span {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-down {
+    background-color: #d7dee0;
+  }
+  .footer-down hr {
+    margin: 0 15px;
+  }
+  .footer-desc {
+    padding: 30px 5px;
+  }
+  .footer-desc-context {
+    margin-top: 10px;
+  }
+  .footer-desc-context p {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 26px;
+  }
+  .footer-desc-imgs a {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    padding: 10px;
+  }
+  
 }

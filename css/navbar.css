@@ -1,7 +1,7 @@
 .navbar-wrapper {
   border-bottom: 1px solid #e0e0e0;
   direction: rtl;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -9,20 +9,43 @@
 .navbar {
   width: 300px;
   z-index: 100;
-  color: #333;
+  color: #777;
   margin: 0 auto;
   direction: rtl;
-  padding: 10px;
+  padding: 0;
   background-color: #fff;
   position: fixed;
   top: 0;
+  bottom: 0;
   right: -300px;
-  height: 100%;
   transition: .3s;
+  overflow: auto;
+  box-shadow: -2px 0 4px 0 rgba(0,0,0,.13);
+  align-content: flex-start;
+}
+
+.navbar hr {
+  width: 100%;
+  margin: 0 20px;
+}
+
+.navbar-logo {
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 .navbar-logo img {
   width: 100%;
+  max-width: 150px;
+}
+
+.navbar-logo p {
+  font-size: 12px;
+}
+
+.navbar-menu {
+  margin: 10px 0 0 0;
 }
 
 #menu {
@@ -38,11 +61,10 @@
   position: relative;
   text-align: right;
   font-size: 14px;
-  padding: 10px 20px 10px 0px;
+  padding: 10px 20px 10px 20px;
   display: block;
   transition: .2s;
-  color: #333;
-  border-bottom: 1px solid #8b8e90;
+  color: #777;
 }
 
 .item .icon-circle {
@@ -56,15 +78,23 @@
 }
 
 .item>a:hover {
-  color: #ab8d3f;
+  color: #fb3449;
 }
 
 .item>a:hover span {
-  color: #ab8d3f;
+  color: #fb3449;
+}
+
+.item>a span {
+  margin-left: 10px;
+}
+
+.details {
+  background-color: #f0f0f0;
 }
 
 .item-title span {
-  color: #333;
+  color: #777;
   font-size: 17px;
   align-self: center;
   transition: .2s;
@@ -74,14 +104,8 @@
   margin-left: 10px;
 }
 
-.navbar-icon-mobile {
-  margin-right: 20px;
-}
-
 .item-title p {
-  margin: 3px 0 0 0;
   font-size: 14px;
-  align-self: center;
 }
 
 .submenu {
@@ -96,12 +120,15 @@
   position: relative;
   text-decoration: none;
   text-align: right;
-  padding: 10px 40px 10px 20px;
-  color: #333;
+  padding: 10px 40px 10px 2px;
+  color: #777;
   transition: .2s;
   font-size: 13px;
-  border-bottom: 1px solid #8b8e90;
   display: block;
+}
+
+.title>a span {
+  margin-left: 10px;
 }
 
 .title-inner p {
@@ -124,7 +151,7 @@
 }
 
 .subitem>a:hover {
-  color: #ab8d3f;
+  color: #fb3449;
   background-color: #f4f4f4;
 }
 
@@ -132,14 +159,21 @@
   .navbar-outer {
     border-bottom: 1px solid #e0e0e0;
     position: sticky;
-    top: 0;
+    top: 66px;
     background-color: #fff;
-    z-index: 100;
+    z-index: 99;
   }
   .navbar {
     position: relative;
     top: 0;
+    right: 0;
     padding: 0;
+    overflow: unset;
+    width: 100%;
+    box-shadow: none;
+    display: block;
+    background-color: #fff;
+    margin: 0 25px;
   }
   .item .icon-circle {
     display: block;
@@ -147,23 +181,21 @@
   .navbar-icon-arrow {
     display: none;
   }
-  .navbar {
-    display: block;
-    background-color: #fff;
-  }
   #menu {
     position: relative;
-    max-width: 1200px;
     margin: 0 auto;
     overflow: visible;
   }
   .item {
     float: right;
+    cursor: pointer;
   }
   .item>a {
-    font-size: 12px;
-    padding: 20px 0 20px 40px;
+    font-size: 13px;
+    padding: 10px 20px;
     border-bottom: none;
+    font-weight: bold;
+    color: #616161;
   }
   .item:last-child {
     border-bottom: none;
@@ -171,14 +203,19 @@
   .item>a:hover {
     border-radius: 2px 2px 4px 4px;
   }
+  .item>a:hover p {
+    color: #fb3449;
+  }
   .details {
     float: right;
-    background-color: #fafafa;
+    background-color: #fff;
     position: absolute;
     padding-bottom: 10px;
     visibility: hidden;
     opacity: 0;
-    top: 65px;
+    top: 41px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.13);
+    border-radius: 0 0 5px 5px;
   }
   .item:hover div {
     visibility: visible;
@@ -190,10 +227,8 @@
   }
   .submenu-multipleItem {
     float: right;
-    border-left: 1px dotted #ab8d3f;
-    height: 350px;
     padding: 0 5px;
-    width: 250px;
+    width: 200px;
   }
   .submenu-multipleItem:last-child {
     border-left: none;
@@ -209,7 +244,7 @@
     border-bottom: none;
   }
   .title>a:hover {
-    color: #ab8d3f;
+    color: #fb3449;
   }
   .title-inner p {
     font-weight: bold;
@@ -224,6 +259,27 @@
     border-top: none;
   }
   .subitem>a:hover {
-    color: #ab8d3f;
+    color: #fb3449;
+    background-color: #f9f9f9;
+    border-radius: 7px;
+  }
+
+  /* Magic line */
+  .group:after { 
+    display: block; 
+    content: ""; 
+    clear: both; 
+  }
+  #magic-line { 
+    position: absolute;
+    bottom: -2px; 
+    right: 0;
+    height: 2px; 
+    background: #ef5662;
   }
 }
+
+
+
+
+

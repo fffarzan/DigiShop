@@ -8,9 +8,6 @@
 
   <!-- css libs -->
   <link rel="stylesheet" href="../assets/lib/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/lib/css/animate.css">
-  <link rel="stylesheet" href="../assets/lib/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="../assets/lib/css/owl.theme.default.min.css">
 
   <!-- dev -->
   <link rel="stylesheet" href="../css/fonts.css">
@@ -18,7 +15,7 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/first-page.css">
+  <link rel="stylesheet" href="../css/product-category.css">
 
   <!-- build -->
   <link rel="stylesheet" href="style.css">
@@ -353,408 +350,360 @@
   </article>
 
   <!-- main -->
-  <main id="firstPage-main" class="firstPage-main">
+  <main id="productCategory-main" class="productCategory-main">
+    <div class="container-fluid">
 
-    <!-- head -->
-    <div class="container-fluid firstPage-header">
-      <div class="row">
-        <div class="col-12 col-lg-8 firstPage-banner-outer">
-          <section id="firstPage-banner" class="owl-carousel owl-theme firstPage-banner">
-            <div class="firstPage-banner-item">
-              <a href="#"><img src="../assets/img/Banner1.jpg" alt="Banner1"></a>
-            </div>
-            <div class="firstPage-banner-item">
-              <a href="#"><img src="../assets/img/Banner2.jpg" alt="Banner2"></a>
-            </div>
-            <div class="firstPage-banner-item">
-              <a href="#"><img src="../assets/img/Banner3.jpg" alt="Banner3"></a>
-            </div>
-          </section>
+      <!-- filters -->
+      <div class="container-fluid">
+        <div class="row productCategory-filterButtons">
+          <div class="d-flex greyButton" id="productCategory-advancedSearch-button">
+            <p class="align-self-start">جستجوی پیشرفته</p>
+            <span class="icon icon-filter align-self-start"></span>
+          </div>
+          <div class="d-flex greyButton" id="productCategory-ordering-button">
+            <p class="align-self-start">پربازدیدترین</p>
+            <span class="icon icon-ordering align-self-start"></span>
+          </div>
         </div>
-        <div class="d-none d-lg-block col-lg-4">
-          <div class="container-fluid firstPage-poster">
-            <div class="row">
-              <div class="col-12 firstPage-poster-inner">
-                <a href="#"><img src="../assets/img/Vijeh1.jpg" alt="Vijeh1"></a>
-              </div>
-              <div class="col-12 firstPage-poster-inner">
-                <a href="#"><img src="../assets/img/Vijeh2.jpg" alt="Vijeh2"></a>
-              </div>
+      </div>
+      
+      <!-- advanced search mobile -->
+      <div class="container-fluid productCategory-advancedSearch-header-outer">
+        <div class="row productCategory-advancedSearch-header">
+          <p>گوشی موبایل</p>
+          <span class="icon icon-close"></span>
+        </div>
+        <div class="row productCategory-advancedSearch-baseFilters">
+          <div class="greyButton" id="productCategory-advancedSearch-baseFilters-clearButton">
+            <p>پاک کردن همه</p>
+          </div>
+          <div class="">
+            <p>کالاهای موجود</p>
+            <div class="toggleButton">
+              <div class="toggleButton-toggling"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- colory carousel -->
-    <div class="container-fluid firstPage-coloryCarousel-outer">
-      <div class="row firstPage-coloryCarousel">
+      <!-- breadcrumb -->
+      <!-- <nav aria-label="breadcrumb" class="shop-breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">فروشگاه اینترنتی دیجی‌کالا</a></li>
+        <li class="breadcrumb-item"><a href="#">کالاهای دیجیتال</a></li>
+        <li class="breadcrumb-item active" aria-current="page">جستجو برای گوشی موبایل</li>
+      </ol>
+    </nav> -->
 
-        <!-- logo -->
-        <div class="d-none d-lg-block col-lg-2 firstPage-coloryCarousel-logoItem">
-          <img src="../assets/img/PiShAnLogo.png" alt="PiShAnLogo">
-          <div class="d-flex justify-content-center firstPage-coloryCarousel-more">
-            <span class="icon icon-arrow-forward"></span>
-            <p>مشاهده همه</p>
+      <div class="col-12 productCategory">
+
+        <div class="d-none d-lg-block contaniner-fluid">
+          <div class="row">
+            <div class="col-12"></div>
           </div>
         </div>
 
-        <!-- carousel -->
-        <div class="col-12 col-lg-10 firstPage-coloryCarousel-carousel">
-          <section id="firstPage-coloryCarousel-carousel"
-            class="owl-carousel owl-theme firstPage-coloryCarousel-carousel">
-            <a href="#" class="firstPage-coloryCarousel-carousel-logoItem">
-              <img src="../assets/img/PiShAnLogo.png" alt="PiShAnLogo">
-              <div class="d-flex justify-content-center firstPage-coloryCarousel-carousel-more">
-                <p>مشاهده همه</p>
-                <span class="icon icon-arrow-back"></span>
-              </div>
-            </a>
-            <a href="#" class="firstPage-coloryCarousel-item">
-              <img src="../assets/img/PiShAn1.jpg" alt="PiShAn1">
-              <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-              <div class="firstPage-coloryCarousel-discount d-flex justify-content-end">
-                <span class="firstPage-coloryCarousel-oldPrice">۴۸,۸۰۰</span>
-                <span class="firstPage-coloryCarousel-percent">۱۹٪</span>
-              </div>
-              <div class="d-flex firstPage-coloryCarousel-price justify-content-end">
-                <span>۲,۳۹۹,۰۰۰</span>
-                <p>تومان</p>
-              </div>
-            </a>
-            <a href="#" class="firstPage-coloryCarousel-item">
-              <img src="../assets/img/PiShAn2.jpg" alt="PiShAn2">
-              <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-              <div class="firstPage-coloryCarousel-discount d-flex justify-content-end">
-                <span class="firstPage-coloryCarousel-oldPrice">۴۸,۸۰۰</span>
-                <span class="firstPage-coloryCarousel-percent">۱۹٪</span>
-              </div>
-              <div class="d-flex firstPage-coloryCarousel-price justify-content-end">
-                <span>۲,۳۹۹,۰۰۰</span>
-                <p>تومان</p>
-              </div>
-            </a>
-            <a href="#" class="firstPage-coloryCarousel-item">
-              <img src="../assets/img/PiShAn3.jpg" alt="PiShAn3">
-              <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-              <div class="firstPage-coloryCarousel-discount d-flex justify-content-end">
-                <span class="firstPage-coloryCarousel-oldPrice">۴۸,۸۰۰</span>
-                <span class="firstPage-coloryCarousel-percent">۱۹٪</span>
-              </div>
-              <div class="d-flex firstPage-coloryCarousel-price justify-content-end">
-                <span>۲,۳۹۹,۰۰۰</span>
-                <p>تومان</p>
-              </div>
-            </a>
-            <a href="#" class="firstPage-coloryCarousel-item">
-              <img src="../assets/img/PiShAn4.jpg" alt="PiShAn4">
-              <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-              <div class="firstPage-coloryCarousel-discount d-flex justify-content-end">
-                <span class="firstPage-coloryCarousel-oldPrice">۴۸,۸۰۰</span>
-                <span class="firstPage-coloryCarousel-percent">۱۹٪</span>
-              </div>
-              <div class="d-flex firstPage-coloryCarousel-price justify-content-end">
-                <span>۲,۳۹۹,۰۰۰</span>
-                <p>تومان</p>
-              </div>
-            </a>
-          </section>
-        </div>
+        <!-- products -->
+        <div class="container-fluid productCategory-product-wrapper">
+          <div class="row">
 
-      </div>
-    </div>
-
-    <!-- services -->
-    <div class="container-fluid firstPage-services-outer">
-      <div class="row firstPage-services">
-        <div class="col-6 col-lg-3 firstPage-service">
-          <a href="#"><img src="../assets/img/Service1.jpg" alt="Service1"></a>
-        </div>
-        <div class="col-6 col-lg-3 firstPage-service">
-          <a href="#"><img src="../assets/img/Service2.jpg" alt="Service2"></a>
-        </div>
-        <div class="col-6 col-lg-3 firstPage-service">
-          <a href="#"><img src="../assets/img/Service3.jpg" alt="Service3"></a>
-        </div>
-        <div class="col-6 col-lg-3 firstPage-service">
-          <a href="#"><img src="../assets/img/Service4.jpg" alt="Service4"></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- important and sudden suggestion carousel -->
-    <div class="container-fluid firstPage-importantProduct-outer">
-      <div class="row">
-
-        <!-- important carousel -->
-        <div class="col-12 col-lg-9 firstPage-importantProduct order-2 order-md-1">
-          <div class="container-fluid firstPage-product">
-            <hr class="d-block d-lg-none">
-            <div class="row firstPage-product-inner">
-
-              <!-- title -->
-              <div class="col-12 d-lg-flex justify-content-lg-between">
-                <div class="firstPage-importantProduct-titleFillBox">
-                  <p>کالاهای موجود</p>
-                  <hr class="d-none d-lg-block">
+            <div class="col-12 productCategory-product-outer">
+              <div class="d-flex productCategory-product">
+                <a href="#" class="align-self-start"><img src="../assets/img/Mobile1.jpg" alt="Mobile1"></a>
+                <div class="align-self-center productCategory-product-desc">
+                  <a href="#">
+                    <h6>گوشی موبایل شیائومی مدل Redmi Note 8 M1908C3JG دو سیم‌ کارت ظرفیت 64 گیگابایت</h6>
+                  </a>
+                  <div class="productCategory-product-rating">
+                    <div class="shop-ratingStar">
+                      <div class="shop-ratingStar-top" style="width: 50%">
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="shop-ratingStar-bottom">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                      </div>
+                    </div>
+                    <div class="productCategory-product-ratingComm">
+                      <span>(۳۲۸)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end productCategory-product-price">
+                    <span class="align-self-center">۳,۰۹۹,۰۰۰ </span>
+                    <p class="align-self-center">تومان</p>
+                  </div>
                 </div>
-                <div class="d-none d-lg-block firstPage-importantProduct-titleEmptyBox"></div>
               </div>
-
-              <!-- carousel -->
-              <div class="col-12 firstPage-importantCarousel-outer">
-                <section id="firstPage-importantCarousel" class="owl-carousel owl-theme firstPage-productCarousel">
-                  <a href="#" class="firstPage-productCarousel-item">
-                    <img src="../assets/img/PiShAn1.jpg" alt="PiShAn1">
-                    <div class="firstPage-productCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی</h5>
-                      <div class="shop-discount d-flex justify-content-end">
-                        <span class="shop-oldPrice">۴۸,۸۰۰</span>
-                        <span class="shop-percent">۱۹٪</span>
-                      </div>
-                      <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="firstPage-productCarousel-item">
-                    <img src="../assets/img/PiShAn2.jpg" alt="PiShAn2">
-                    <div class="firstPage-productCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                      <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="firstPage-productCarousel-item">
-                    <img src="../assets/img/PiShAn3.jpg" alt="PiShAn3">
-                    <div class="firstPage-productCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                      <div class="shop-discount d-flex justify-content-end">
-                        <span class="shop-oldPrice">۴۸,۸۰۰</span>
-                        <span class="shop-percent">۱۹٪</span>
-                      </div>
-                      <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="firstPage-productCarousel-item">
-                    <img src="../assets/img/PiShAn4.jpg" alt="PiShAn4">
-                    <div class="firstPage-productCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                      <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="firstPage-productCarousel-item">
-                    <img src="../assets/img/PiShAn4.jpg" alt="PiShAn4">
-                    <div class="firstPage-productCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                      <div class="shop-discount d-flex justify-content-end">
-                        <span class="shop-oldPrice">۴۸,۸۰۰</span>
-                        <span class="shop-percent">۱۹٪</span>
-                      </div>
-                      <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                </section>
-              </div>
-
             </div>
-          </div>
-        </div>
 
-        <!-- sudden suggestion carousel -->
-        <div class="col-12 d-md-none d-lg-block col-lg-3 order-1 order-md-1">
-          <div class="container-fluid firstPage-suddenSuggestionProduct-outer">
-            <div class="row firstPage-suddenSuggestionProduct">
-
-              <!-- title -->
-              <div class="col-12 firstPage-suddenSuggestionProduct-title-outer">
-                <div class="firstPage-suddenSuggestionProduct-title">
-                  <p>پیشنهاد لحظه ای</p>
-                  <hr>
+            <div class="col-12 productCategory-product-outer">
+              <div class="d-flex productCategory-product">
+                <a href="#" class="align-self-start"><img src="../assets/img/Mobile2.jpg" alt="Mobile1"></a>
+                <div class="align-self-center productCategory-product-desc">
+                  <a href="#">
+                    <h6>گوشی موبایل نوکیا مدل C1 TA-1165 دوسیم کارت ظرفیت 16 گیگابایت</h6>
+                  </a>
+                  <div class="productCategory-product-rating">
+                    <div class="shop-ratingStar">
+                      <div class="shop-ratingStar-top" style="width: 50%">
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="shop-ratingStar-bottom">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                      </div>
+                    </div>
+                    <div class="productCategory-product-ratingComm">
+                      <span>(۳۲۸)</span>
+                    </div>
+                  </div>
+                  <div class="shop-discount d-flex justify-content-end">
+                    <span class="shop-oldPrice">۴۸,۸۰۰</span>
+                    <span class="shop-percent">۱۹٪</span>
+                  </div>
+                  <div class="d-flex justify-content-end productCategory-product-price">
+                    <span class="align-self-center">۳,۰۹۹,۰۰۰ </span>
+                    <p class="align-self-center">تومان</p>
+                  </div>
                 </div>
               </div>
-
-              <!-- carousel -->
-              <div class="col-12">
-                <section id="firstPage-suddenSuggestionCarousel"
-                  class="owl-carousel owl-theme firstPage-suddenSuggestionCarousel">
-                  <a href="#" class="firstPage-suddenSuggestionCarousel-item">
-                    <img src="../assets/img/PiShAn1.jpg" alt="PiShAn1">
-                    <div class="firstPage-suddenSuggestionCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                      <div class="firstPage-suddenSuggestionCarousel-discount d-flex justify-content-end">
-                        <span class="firstPage-suddenSuggestionCarousel-oldPrice">۴۸,۸۰۰</span>
-                        <span class="firstPage-suddenSuggestionCarousel-percent">۱۹٪</span>
-                      </div>
-                      <div class="d-flex firstPage-suddenSuggestionCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="firstPage-suddenSuggestionCarousel-item">
-                    <img src="../assets/img/PiShAn2.jpg" alt="PiShAn2">
-                    <div class="firstPage-suddenSuggestionCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                      <div class="firstPage-suddenSuggestionCarousel-discount d-flex justify-content-end">
-                        <span class="firstPage-suddenSuggestionCarousel-oldPrice">۴۸,۸۰۰</span>
-                        <span class="firstPage-suddenSuggestionCarousel-percent">۱۹٪</span>
-                      </div>
-                      <div class="d-flex firstPage-suddenSuggestionCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="firstPage-suddenSuggestionCarousel-item">
-                    <img src="../assets/img/PiShAn3.jpg" alt="PiShAn3">
-                    <div class="firstPage-suddenSuggestionCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                      <div class="d-flex firstPage-suddenSuggestionCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="firstPage-suddenSuggestionCarousel-item">
-                    <img src="../assets/img/PiShAn4.jpg" alt="PiShAn4">
-                    <div class="firstPage-suddenSuggestionCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                      <div class="d-flex firstPage-suddenSuggestionCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="#" class="firstPage-suddenSuggestionCarousel-item">
-                    <img src="../assets/img/PiShAn4.jpg" alt="PiShAn4">
-                    <div class="firstPage-suddenSuggestionCarousel-itemDesc">
-                      <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                      <div class="firstPage-suddenSuggestionCarousel-discount d-flex justify-content-end">
-                        <span class="firstPage-suddenSuggestionCarousel-oldPrice">۴۸,۸۰۰</span>
-                        <span class="firstPage-suddenSuggestionCarousel-percent">۱۹٪</span>
-                      </div>
-                      <div class="d-flex firstPage-suddenSuggestionCarousel-price justify-content-end">
-                        <span>۲,۳۹۹,۰۰۰</span>
-                        <p>تومان</p>
-                      </div>
-                    </div>
-                  </a>
-                </section>
-              </div>
-
             </div>
+
+            <div class="col-12 productCategory-product-outer">
+              <div class="d-flex productCategory-product">
+                <a href="#" class="align-self-start"><img src="../assets/img/Mobile3.jpg" alt="Mobile1"></a>
+                <div class="align-self-center productCategory-product-desc">
+                  <a href="#">
+                    <h6>گوشی موبایل دوجی مدل S90 دو سیم کارت ظرفیت 128 گیگابایت همراه با ماژول دوربین عکاسی در شب و گیم پد و پاوربانک</h6>
+                  </a>
+                  <div class="productCategory-product-rating">
+                    <div class="shop-ratingStar">
+                      <div class="shop-ratingStar-top" style="width: 50%">
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="shop-ratingStar-bottom">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                      </div>
+                    </div>
+                    <div class="productCategory-product-ratingComm">
+                      <span>(۳۲۸)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end productCategory-product-price">
+                    <span class="align-self-center">۳,۰۹۹,۰۰۰ </span>
+                    <p class="align-self-center">تومان</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 productCategory-product-outer">
+              <div class="d-flex productCategory-product">
+                <a href="#" class="align-self-start"><img src="../assets/img/Mobile4.jpg" alt="Mobile1"></a>
+                <div class="align-self-center productCategory-product-desc">
+                  <a href="#">
+                    <h6>گوشی موبایل نوکیا مدل 1 دو سیم کارت</h6>
+                  </a>
+                  <div class="productCategory-product-rating">
+                    <div class="shop-ratingStar">
+                      <div class="shop-ratingStar-top" style="width: 50%">
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="shop-ratingStar-bottom">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                      </div>
+                    </div>
+                    <div class="productCategory-product-ratingComm">
+                      <span>(۳۲۸)</span>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end productCategory-product-price">
+                    <span class="align-self-center">۳,۰۹۹,۰۰۰ </span>
+                    <p class="align-self-center">تومان</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 productCategory-product-outer">
+              <div class="d-flex productCategory-product">
+                <a href="#" class="align-self-start"><img src="../assets/img/Mobile5.jpg" alt="Mobile1"></a>
+                <div class="align-self-center productCategory-product-desc">
+                  <a href="#">
+                    <h6>گوشی موبایل نوکیا مدل 1 دو سیم کارت</h6>
+                  </a>
+                  <div class="productCategory-product-rating">
+                    <div class="shop-ratingStar">
+                      <div class="shop-ratingStar-top" style="width: 50%">
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="shop-ratingStar-bottom">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                      </div>
+                    </div>
+                    <div class="productCategory-product-ratingComm">
+                      <span>(۳۲۸)</span>
+                    </div>
+                  </div>
+                  <div class="productCategory-product-unavailable">
+                    <hr>
+                    <span>ناموجود</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 productCategory-product-outer">
+              <div class="d-flex productCategory-product">
+                <a href="#" class="align-self-start"><img src="../assets/img/Mobile6.jpg" alt="Mobile1"></a>
+                <div class="align-self-center productCategory-product-desc">
+                  <a href="#">
+                    <h6>گوشی موبایل دوجی مدل S90 دو سیم کارت ظرفیت 128 گیگابایت همراه با ماژول دوربین عکاسی در شب و گیم پد و پاوربانک</h6>
+                  </a>
+                  <div class="productCategory-product-rating">
+                    <div class="shop-ratingStar">
+                      <div class="shop-ratingStar-top" style="width: 50%">
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="shop-ratingStar-bottom">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                      </div>
+                    </div>
+                    <div class="productCategory-product-ratingComm">
+                      <span>(۳۲۸)</span>
+                    </div>
+                  </div>
+                  <div class="productCategory-product-unavailable">
+                    <hr>
+                    <span>ناموجود</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 productCategory-product-outer">
+              <div class="d-flex productCategory-product">
+                <a href="#" class="align-self-start"><img src="../assets/img/Mobile6.jpg" alt="Mobile1"></a>
+                <div class="align-self-center productCategory-product-desc">
+                  <a href="#">
+                    <h6>گوشی موبایل دوجی مدل S90 دو سیم کارت ظرفیت 128 گیگابایت همراه با ماژول دوربین عکاسی در شب و گیم پد و پاوربانک</h6>
+                  </a>
+                  <div class="productCategory-product-rating">
+                    <div class="shop-ratingStar">
+                      <div class="shop-ratingStar-top" style="width: 50%">
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="shop-ratingStar-bottom">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                      </div>
+                    </div>
+                    <div class="productCategory-product-ratingComm">
+                      <span>(۳۲۸)</span>
+                    </div>
+                  </div>
+                  <div class="productCategory-product-soon">
+                    <hr>
+                    <span>بزودی</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 productCategory-product-outer">
+              <div class="d-flex productCategory-product">
+                <a href="#" class="align-self-start"><img src="../assets/img/Mobile8.jpg" alt="Mobile1"></a>
+                <div class="align-self-center productCategory-product-desc">
+                  <a href="#">
+                    <h6>گوشی موبایل دوجی مدل S90 دو سیم کارت ظرفیت 128 گیگابایت همراه با ماژول دوربین عکاسی در شب و گیم پد و پاوربانک</h6>
+                  </a>
+                  <div class="productCategory-product-rating">
+                    <div class="shop-ratingStar">
+                      <div class="shop-ratingStar-top" style="width: 50%">
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                        <span class="icon icon-star-full"></span>
+                      </div>
+                      <div class="shop-ratingStar-bottom">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                      </div>
+                    </div>
+                    <div class="productCategory-product-ratingComm">
+                      <span>(۳۲۸)</span>
+                    </div>
+                  </div>
+                  <div class="productCategory-product-stoppedProduction">
+                    <hr>
+                    <span>توقف تولید</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
       </div>
-    </div>
 
-    <!-- product carousel -->
-    <div class="container-fluid firstPage-product">
-      <hr class="d-block d-lg-none">
-      <div class="row firstPage-product-inner">
-
-        <!-- title -->
-        <div class="col-12 d-lg-flex justify-content-lg-between firstPage-product-title">
-          <div class="firstPage-product-titleFillBox">
-            <p>منتخب جدیدترین کالاها</p>
-            <hr class="d-none d-lg-block">
-          </div>
-          <div class="d-none d-lg-block firstPage-product-titleEmptyBox"></div>
-        </div>
-
-        <!-- carousel -->
-        <div class="col-12 firstPage-productCarousel-outer">
-          <section id="firstPage-productCarousel" class="owl-carousel owl-theme firstPage-productCarousel">
-            <a href="#" class="firstPage-productCarousel-item">
-              <img src="../assets/img/PiShAn1.jpg" alt="PiShAn1">
-              <div class="firstPage-productCarousel-itemDesc">
-                <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                <div class="shop-discount d-flex justify-content-end">
-                  <span class="shop-oldPrice">۴۸,۸۰۰</span>
-                  <span class="shop-percent">۱۹٪</span>
-                </div>
-                <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                  <span>۲,۳۹۹,۰۰۰</span>
-                  <p>تومان</p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="firstPage-productCarousel-item">
-              <img src="../assets/img/PiShAn2.jpg" alt="PiShAn2">
-              <div class="firstPage-productCarousel-itemDesc">
-                <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                <div class="shop-discount d-flex justify-content-end">
-                  <span class="shop-oldPrice">۴۸,۸۰۰</span>
-                  <span class="shop-percent">۱۹٪</span>
-                </div>
-                <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                  <span>۲,۳۹۹,۰۰۰</span>
-                  <p>تومان</p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="firstPage-productCarousel-item">
-              <img src="../assets/img/PiShAn3.jpg" alt="PiShAn3">
-              <div class="firstPage-productCarousel-itemDesc">
-                <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                <div class="shop-discount d-flex justify-content-end">
-                  <span class="shop-oldPrice">۴۸,۸۰۰</span>
-                  <span class="shop-percent">۱۹٪</span>
-                </div>
-                <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                  <span>۲,۳۹۹,۰۰۰</span>
-                  <p>تومان</p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="firstPage-productCarousel-item">
-              <img src="../assets/img/PiShAn4.jpg" alt="PiShAn4">
-              <div class="firstPage-productCarousel-itemDesc">
-                <h5> مردانه مدل 98024</h5>
-                <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                  <span>۲,۳۹۹,۰۰۰</span>
-                  <p>تومان</p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="firstPage-productCarousel-item">
-              <img src="../assets/img/PiShAn4.jpg" alt="PiShAn4">
-              <div class="firstPage-productCarousel-itemDesc">
-                <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                  <span>۲,۳۹۹,۰۰۰</span>
-                  <p>تومان</p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="firstPage-productCarousel-item">
-              <img src="../assets/img/PiShAn4.jpg" alt="PiShAn4">
-              <div class="firstPage-productCarousel-itemDesc">
-                <h5>کفش مخصوص پیاده روی مردانه مدل 98024</h5>
-                <div class="d-flex firstPage-productCarousel-price justify-content-end">
-                  <span>۲,۳۹۹,۰۰۰</span>
-                  <p>تومان</p>
-                </div>
-              </div>
-            </a>
-          </section>
-        </div>
-
-      </div>
     </div>
 
   </main>
@@ -868,13 +817,12 @@
   <!-- js libs -->
   <script src="../assets/lib/js/jquery-3.4.1.min.js"></script>
   <script src="../assets/lib/js/bootstrap.min.js"></script>
-  <script src="../assets/lib/js/owl.carousel.min.js"></script>
 
   <!-- dev -->
   <script src="../js/base.js"></script>
   <script src="../js/header.js"></script>
   <script src="../js/navbar.js"></script>
-  <script src="../js/first-page.js"></script>
+  <script src="../js/product-category.js"></script>
 
   <!-- build -->
   <script src="script.js"></script>
